@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transação</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="inicio">
+        <h1 class="text">Finalize seu pagamento!</h1>
+    </div>
+    <div class="tela">
+        <section class="dados">
+            <h1>Dados do Pagador</h1>
+        
+            <div id="input">
+                <input type="name" name="Nome-Completo" id="txtv" placeholder="Nome Completo">
+                <input type="number" name="CPF" id="txtv" placeholder="CPF">
+                <input type="date" name="Data-Nascimento" id="txtv">
+
+
+            </div>
+        </section>
+        <section class="transação">
+            <h1>Transação</h1>
+        
+            <div id="input">
+                <input type="text" name="Nome-Pagador" id="txtv" placeholder="Nome do Proprierário do Cartão">
+                <input type="number" name="Numero-Cartao" id="txtv" placeholder="Número do Cartão">
+                <label for="date">Vencimento do Cartão</label>
+                <input type="month" name="Vencimento-Cartao" id="txtv" placeholder="Data de Venc. do Cartão">
+                <label class="cvv" for="date">CVV</label>
+                <input type="number" name="CVV-Cartao" id="txtv" placeholder="Código de Segurança">
+                <input type="number" name="Numero-Cartao" id="pag" placeholder="Valor da Compra">
+                <select name="parcelas" id="parcelas"></select>
+        <div>
+            <button onclick="simular()" >Finalizar Pagamento</button>
+        </div>
+
+            </div>            
+        </section>
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
